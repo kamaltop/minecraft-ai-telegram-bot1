@@ -28,12 +28,13 @@ if not GEMINI_KEY:
     raise RuntimeError("GEMINI_KEY غير موجود في .env")
 
 MODRINTH_API = "https://api.modrinth.com/v2"
-DB_FILE = "bot.db"
+BASE_DIR = Path(__file__).resolve().parent
+DB_FILE = str(BASE_DIR / "bot.db")
 MOJANG_MANIFEST_URL = "https://launchermeta.mojang.com/mc/game/version_manifest_v2.json"
 FABRIC_META = "https://meta.fabricmc.net/v2"
 PAPER_API = "https://api.papermc.io/v2"
-SERVER_ROOT = Path("servers")
-AFK_ROOT = Path("afk-client")
+SERVER_ROOT = BASE_DIR / "servers"
+AFK_ROOT = BASE_DIR
 afk_processes = {}
 voice_player = None
 
