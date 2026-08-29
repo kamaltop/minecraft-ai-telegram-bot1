@@ -1,0 +1,8 @@
+{
+  "name": "minecraft-afk-client",
+  "private": true,
+  "version": "1.0.0",
+  "dependencies": {
+    "mineflayer": "^4.26.0"
+  }
+}

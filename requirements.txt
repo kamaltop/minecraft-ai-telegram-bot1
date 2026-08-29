@@ -1,0 +1,7 @@
+python-telegram-bot[job-queue]==20.7
+httpx
+python-dotenv
+google-genai
+pyrogram
+tgcrypto
+py-tgcalls==2.1.0
